@@ -1,20 +1,22 @@
 <template>
   <div class="home">
     <div class="login">
-      <h1>login.</h1>
-      <a-button type="primary" @click.native="login()">
-      Login
-      </a-button>
+      <h1>Login</h1>
+      <button @click.native="login()"></button>
     </div>
   </div>
 </template>
 
 <script>
 import { auth, googleProvider } from '@/initFirebase';
+import SigninButton from '@/components/SigninButton.vue';
 import store from '@/store';
 
 export default {
   name: 'Login',
+  mounted() {
+    if (this.$store.state.user.loggedIn) this.$router.push('/');
+  },
   methods: {
     login() {
       auth.signInWithPopup(googleProvider)
@@ -27,22 +29,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-  h1 {
-    font-size: 4em;
-  }
-
-  button {
-    height: 40px;
-    font-size: 1.5em;
-  }
-
-  .login {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
