@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Login from '../views/Login.vue';
-import Writes from '../views/Writes.vue';
+import Writes from '../views/Writes.vue'
 
 Vue.use(VueRouter);
 
@@ -24,7 +24,7 @@ const routes = [
     path: '/writes',
     name: 'Writes',
     component: Writes,
-  },
+  }
 ];
 
 const router = new VueRouter({

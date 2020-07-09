@@ -24,7 +24,7 @@ const routes = [
     path: '/writes',
     name: 'Writes',
     component: Writes,
-  },
+  }
 ];
 
 const router = new VueRouter({
