@@ -34,7 +34,7 @@ export default {
   }
 
   button {
-    height: 40px;
+    padding: 5px;
     font-size: 1.5em;
   }
 

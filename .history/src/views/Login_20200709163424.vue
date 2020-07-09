@@ -30,12 +30,15 @@ export default {
 
 <style scoped>
   h1 {
-    font-size: 4em;
+    font-size: 2em;
   }
 
-  button {
-    height: 40px;
-    font-size: 1.5em;
+  .ant-btn-primary,
+  .ant-btn {
+    padding: 10px;
+    height: 90px;
+    width: 160px;
+    font-size: 3em;
   }
 
   .login {

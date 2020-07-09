@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="login">
-      <h1>login.</h1>
+      <h1>login</h1>
       <a-button type="primary" @click.native="login()">
       Login
       </a-button>
@@ -34,7 +34,6 @@ export default {
   }
 
   button {
-    height: 40px;
     font-size: 1.5em;
   }
 

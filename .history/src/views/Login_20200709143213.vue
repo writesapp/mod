@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="login">
-      <h1>login.</h1>
+      <h1>Login</h1>
       <a-button type="primary" @click.native="login()">
       Login
       </a-button>
@@ -27,22 +27,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-  h1 {
-    font-size: 4em;
-  }
-
-  button {
-    height: 40px;
-    font-size: 1.5em;
-  }
-
-  .login {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
