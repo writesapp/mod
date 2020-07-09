@@ -1,10 +1,5 @@
 <template>
-  <div class="home">
-    <div class="login">
-      <h1>Login</h1>
-      <SigninButton @click.native="login()"></SigninButton>
-    </div>
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
