@@ -3,7 +3,7 @@
     <a-layout id="components-layout-demo-custom-trigger">
     <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
       <div class="logo" />
-      <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
+      <a-menu theme="dark" mode="inline" :selectable="false">
         <a-menu-item key="1">
           <router-link to="/">Home</router-link>
         </a-menu-item>
