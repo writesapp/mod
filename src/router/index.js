@@ -11,6 +11,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    props: { isSelected: false },
   },
   {
     path: '/login',
@@ -19,11 +20,13 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Login,
+    props: { isSelected: false },
   },
   {
     path: '/writes',
     name: 'Writes',
     component: Writes,
+    props: { isSelected: false },
   },
 ];
 
